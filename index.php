@@ -78,7 +78,9 @@
 			padding: 15% 0;
 			background: url('./assets/img/background.jpg');
 			background-repeat: no-repeat;
+			background-size:cover;
 			background-position: 100% 10%;
+			min-width: 100%;
 		}
 
 		.rdv{
@@ -274,11 +276,15 @@ FOR ANIMATION
 						<li class="nav-item dropdown nav-dropdown">
 							<a class="nav-link dropdown-toggle dropdown-link" href="#" id="navbarDropdownMenuLink"
 								role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Log In
+								Compte
+								
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								<a class="dropdown-item" href="#patient">Patient</a>
-								<a class="dropdown-item" href="#">Docteur</a>
+								<a class="dropdown-item" href="#patient">
+								<?php // start the session
+								session_start();
+								echo strtoupper($_SESSION['calendar_fd_user']['name']); 
+								?></a>
 							</div>
 						</li>
 					</ul>
@@ -289,8 +295,8 @@ FOR ANIMATION
 		<div class="jumbotron jumbotron-fluid">
 			<div class="container">
 				<h2 class="jumbotron-title">BIENVENUE <br>CHEZ <b>DERMATO AS NDERE</b></h2>
-				<p>Le lieu de la santé ekdu bien être par excellence</p>
-				<div class="rdv-container"><a class="rdv btn btn-primary" href="">PRENDRE RENDEZ-VOUS</a></div>
+				<p>Le lieu de la santé du bien être par excellence</p>
+				<div class="rdv-container"><a class="rdv btn btn-primary" href="./appoint/">PRENDRE RENDEZ-VOUS</a></div>
 			</div>
 		</div>
 
@@ -371,7 +377,7 @@ FOR ANIMATION
 						<a class="mr-3" href=""><i class="fab fa-twitter"></i></a>
 						<a class="mr-3" href=""><i class="fab fa-google"></i></a>
 						<ul>
-							<li class=""><a href="#">dermatoas@gmail.com</a></li>
+							<li class=""><a href="mailto:dermatoas@gmail.com">dermatoas@gmail.com</a></li>
 							<li class=""><a href="#">009999999999</a></li>
 						</ul>
 					</div>
