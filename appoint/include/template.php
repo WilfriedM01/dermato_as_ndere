@@ -14,7 +14,7 @@ $self = WEB_ROOT . 'admin/index.php';
 <div class="wrapper">
   <header class="main-header">
     <!-- Logo -->
-    <a href="<?php echo WEB_ROOT; ?>" class="logo">
+    <a href="../index.php" class="logo">
     <!-- mini logo for sidebar mini 50x50 pixels -->
     <span class="logo-lg"><b>Dermato as Ndere</b></span> </a>
     <!-- Header Navbar: style can be found in header.less -->

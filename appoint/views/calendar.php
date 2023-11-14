@@ -21,7 +21,7 @@
     $.ajax({
         method: "GET",
         type: "GET",
-        url: "http://localhost:8888/event/fetchData.php?action=getEventsList",
+        url: "http://localhost:8888/dermato_as_ndere/appoint/fetchData.php?action=getEventsList",
         // data: formData,
         dataType: "json",
         success: function (data) {

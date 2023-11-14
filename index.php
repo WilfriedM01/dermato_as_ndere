@@ -284,10 +284,13 @@ FOR ANIMATION
 								
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								<a class="dropdown-item" href="#patient">
 								<?php // start the session
+								if(isset($_SESSION['calendar_fd_user']['name'])){
+									echo '<a class="dropdown-item" href="appoint/index.php">'.strtoupper($_SESSION['calendar_fd_user']['name']).'</a>';
 
-								echo $_SESSION['calendar_fd_user']['name']; 
+								 } else{
+									echo '<a class="dropdown-item" href="appoint/login.php">Login</a>';
+								 }
 								?></a>
 							</div>
 						</li>
