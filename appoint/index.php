@@ -6,7 +6,7 @@ require_once './library/functions.php';
 checkFDUser();
 
 $content = 'views/dashboard.php';
-$pageTitle = 'Event Management';
+$pageTitle = 'Appointment';
 $script = array();
 
 require_once 'include/template.php';

@@ -1,3 +1,7 @@
+<?php
+	require_once 'appoint/library/config.php';
+	require_once 'appoint/library/functions.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -282,8 +286,8 @@ FOR ANIMATION
 							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 								<a class="dropdown-item" href="#patient">
 								<?php // start the session
-								session_start();
-								echo strtoupper($_SESSION['calendar_fd_user']['name']); 
+
+								echo $_SESSION['calendar_fd_user']['name']; 
 								?></a>
 							</div>
 						</li>
@@ -296,7 +300,7 @@ FOR ANIMATION
 			<div class="container">
 				<h2 class="jumbotron-title">BIENVENUE <br>CHEZ <b>DERMATO AS NDERE</b></h2>
 				<p>Le lieu de la santé du bien être par excellence</p>
-				<div class="rdv-container"><a class="rdv btn btn-primary" href="./appoint/">PRENDRE RENDEZ-VOUS</a></div>
+				<div class="rdv-container"><a class="rdv btn btn-primary" href="appoint/">PRENDRE RENDEZ-VOUS</a></div>
 			</div>
 		</div>
 
